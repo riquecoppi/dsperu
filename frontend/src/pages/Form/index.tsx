@@ -1,6 +1,8 @@
+import Cadastro from "../../components/Cadastro";
+
 function Form (){
     return(
-        <h1>Formulario de Cadastro</h1>
+        <Cadastro />
     )
 }
 export default Form;
