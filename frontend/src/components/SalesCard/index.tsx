@@ -50,7 +50,7 @@ function SalesCard() {
                             <td className="show992">#341</td>
                             <td className="show576">08/07/2022</td>
                             <td>Felipe</td>
-                            <td className="show992">15</td>
+                            <td className="show992">Moacir Castanho</td>
 
                             <td>R$ 55.00</td>
                             <td>
@@ -63,7 +63,7 @@ function SalesCard() {
                             <td className="show992">#341</td>
                             <td className="show576">08/07/2022</td>
                             <td>Maria</td>
-                            <td className="show992">15</td>
+                            <td className="show992">Sta. Terezinha</td>
 
                             <td>R$ 30.00</td>
                             <td>
@@ -76,7 +76,7 @@ function SalesCard() {
                             <td className="show992">#341</td>
                             <td className="show576">08/07/2022</td>
                             <td>José</td>
-                            <td className="show992">15</td>
+                            <td className="show992">Mailon Medeiros</td>
 
                             <td>R$ 30.00</td>
                             <td>
