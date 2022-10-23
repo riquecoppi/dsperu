@@ -1,6 +1,8 @@
+import Acesso from "../../components/Acesso";
+
 function Login (){
     return(
-        <h1>login</h1>
+      <Acesso />        
     )
 }
 export default Login;

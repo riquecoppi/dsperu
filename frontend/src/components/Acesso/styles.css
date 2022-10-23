@@ -1,0 +1,58 @@
+.dsperu-login {
+    background-color: #283142;
+    border-radius: 10px;
+    padding: 30px 10px;
+    text-align: center;
+ 
+
+  }
+
+  .dsmovie-form {
+    width: calc(100% - 20px);
+}
+
+
+  .dsperu-btn {
+    background-color: #676fff;
+    font-size: 14px;
+    font-weight: 700;
+    height: 40px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dsperu-form-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+  .dsperu-sales-title {
+    color: #676fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+
+  .dsperu-form-control-container {
+    margin-bottom: 16px;
+ 
+    
+    
+  }
+
+  .dsperu-form-control {
+    width: 100%;
+    height: 46px;
+    background-color: #1b2531;
+    border: 1px solid #384459;
+    border-radius: 5px;
+    color: #9aaabe;
+    padding: 0 20px;
+    font-size: 18px;
+  }
