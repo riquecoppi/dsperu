@@ -12,7 +12,7 @@ public class Perueiro {
 	
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private Integer id;
+        private Long id;
 	    private String nome;
         private String email;
         private String senha;
@@ -20,12 +20,21 @@ public class Perueiro {
         public Perueiro() {
         	
         }
+        
 
-		public Integer getId() {
+		public Perueiro(Long id, String nome, String email, String senha) {
+			this.id = id;
+			this.nome = nome;
+			this.email = email;
+			this.senha = senha;
+		}
+
+
+		public Long getId() {
 			return id;
 		}
 
-		public void setId(Integer id) {
+		public void setId(Long id) {
 			this.id = id;
 		}
 
