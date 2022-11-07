@@ -1,6 +1,8 @@
 package com.sistemacoppi.dsperu.services;
 
-import java.util.List;
+
+
+import java.time.LocalDate;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -16,8 +18,14 @@ public class MensalService {
 	@Autowired
 	private MensalRepository repository;
 	
-	public Page<Financeiro> buscaMensalidades(Pageable page){
+	public Page<Financeiro> buscaMensalidades(String minDate, String maxDate, Pageable pageable){
+	    
+		LocalDate min = LocalDate.parse(minDate);
+	 	LocalDate max = LocalDate.parse(maxDate);
+	 	
+		return repository.buscaParcelas(min, max, pageable);
+	 		}
 	
-		return repository.findAll(page);		
-	}
+
+	
 }

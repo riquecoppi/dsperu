@@ -1,6 +1,6 @@
 package com.sistemacoppi.dsperu.entities;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 //import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
@@ -17,13 +17,11 @@ public class Financeiro {
 	
 
 	
-	//@EmbeddedId
-    //private FinanceiroPK id = new FinanceiroPK();
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;    
-    private Date data; 
+    private LocalDate data; 
      
     @ManyToOne
     private Aluno aluno; 
@@ -44,16 +42,15 @@ public class Financeiro {
 		this.id = id;
 	}
 
-	public Date getData() {
+	public LocalDate getData() {
 		return data;
 	}
 
-	public void setData(Date data) {
+	public void setData(LocalDate data) {
 		this.data = data;
 	}
 
-
-
+	
 	public Financeiro() {
     }
     
