@@ -19,19 +19,28 @@ public class Aluno {
 	private String escola;
 	private Double valor;
 	
+
+	
+	
 	public Aluno() {
 		
 	}
 	
 
-	public Aluno(Long id, String nome, String email, String telefone, String escola, Double valor) {
+	public Aluno(Long id, String nome, String email, String telefone, String escola, Double valor,
+			Financeiro financeiro) {
 		this.id = id;
 		this.nome = nome;
 		this.email = email;
 		this.telefone = telefone;
 		this.escola = escola;
 		this.valor = valor;
+
 	}
+
+
+
+
 
 
 	public Long getId() {

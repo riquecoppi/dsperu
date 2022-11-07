@@ -1,45 +1,61 @@
 package com.sistemacoppi.dsperu.entities;
 
-import javax.persistence.EmbeddedId;
+import java.util.Date;
+
+//import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="tb_financeiro")
 public class Financeiro {
 	
-	@EmbeddedId
-	private FinanceiroPK id = new FinanceiroPK();
 	
-    private Double valorPago;
-    
-    public Financeiro() {
-    }
-    
-    public void setAluno(Aluno aluno) {
-    	id.setAluno(aluno);
-    }
-    
-    public void setPerueiro(Perueiro perueiro) {
-    	id.setPerueiro(perueiro);
-    }
 
-	public FinanceiroPK getId() {
+	
+	//@EmbeddedId
+    //private FinanceiroPK id = new FinanceiroPK();
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;    
+    private Date data; 
+     
+    @ManyToOne
+    private Aluno aluno; 
+    
+    public Aluno getAluno() {
+		return aluno;
+	}
+
+	public void setAluno(Aluno aluno) {
+		this.aluno = aluno;
+	}
+
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(FinanceiroPK id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
-	public Double getValorPago() {
-		return valorPago;
+	public Date getData() {
+		return data;
 	}
 
-	public void setValorPago(Double valorPago) {
-		this.valorPago = valorPago;
+	public void setData(Date data) {
+		this.data = data;
 	}
-    
+
+
+
+	public Financeiro() {
+    }
     
 
 }

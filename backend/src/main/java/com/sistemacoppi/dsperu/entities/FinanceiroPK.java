@@ -8,9 +8,9 @@ import javax.persistence.ManyToOne;
 
 @Embeddable
 public class FinanceiroPK implements Serializable {
-
 	private static final long serialVersionUID = 1L;
 
+	
 	@ManyToOne
 	@JoinColumn(name = "aluno_id")
 	private Aluno aluno;
@@ -18,6 +18,8 @@ public class FinanceiroPK implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "perueiro_id")
 	private Perueiro perueiro;
+	
+	
 	
 	public FinanceiroPK() {
 		
