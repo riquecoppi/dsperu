@@ -3,6 +3,8 @@ package com.sistemacoppi.dsperu.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,8 +20,8 @@ public class MensalController {
 	private MensalService service;
 	
 	@GetMapping
-	public List<Financeiro> buscaMensalidades(){
-		return service.buscaMensalidades();
+	public Page<Financeiro> buscaMensalidades(Pageable page){
+		return service.buscaMensalidades(page);
 	}
 
 }

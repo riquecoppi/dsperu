@@ -30,6 +30,52 @@ INSERT INTO	tb_alunos	(nome,email,telefone,escola,valor)	VALUES	('Quesley','ques
 INSERT INTO	tb_alunos	(nome,email,telefone,escola,valor)	VALUES	('Amarildo','amarildo@gmail.com','5543920013175','Mailon Medeiros',50.00);
 
 
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-01-1',2);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-02-1',2);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-03-1',2);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-04-1',2);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-05-1',2);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-06-1',2);
 INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-07-1',2);
 INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-08-1',2);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-09-1',2);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-10-1',2);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-11-1',2);
+
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-01-1',3);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-02-1',3);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-03-1',3);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-04-1',3);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-05-1',3);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-06-1',3);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-07-1',3);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-08-1',3);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-09-1',3);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-10-1',3);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-11-1',3);
+
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-01-1',4);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-02-1',4);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-03-1',4);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-04-1',4);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-05-1',4);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-06-1',4);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-07-1',4);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-08-1',4);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-09-1',4);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-10-1',4);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-11-1',4);
+
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-01-1',5);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-02-1',2);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-03-1',5);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-04-1',5);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-05-1',5);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-06-1',5);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-07-1',5);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-08-1',5);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-09-1',5);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-10-1',5);
+INSERT INTO tb_financeiro (data,aluno_id) VALUES ('2022-11-1',5);
+
 
