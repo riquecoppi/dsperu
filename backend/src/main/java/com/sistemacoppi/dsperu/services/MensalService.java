@@ -2,7 +2,9 @@ package com.sistemacoppi.dsperu.services;
 
 
 
+import java.time.Instant;
 import java.time.LocalDate;
+import java.time.ZoneId;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -20,8 +22,11 @@ public class MensalService {
 	
 	public Page<Financeiro> buscaMensalidades(String minDate, String maxDate, Pageable pageable){
 	    
-		LocalDate min = LocalDate.parse(minDate);
-	 	LocalDate max = LocalDate.parse(maxDate);
+		LocalDate hoje = LocalDate.ofInstant(Instant.now(), ZoneId.systemDefault());
+		
+		
+		LocalDate min = minDate.equals("") ? hoje.minusDays(150) : LocalDate.parse(minDate);
+	 	LocalDate max = maxDate.equals("") ? hoje : LocalDate.parse(maxDate);
 	 	
 		return repository.buscaParcelas(min, max, pageable);
 	 		}
